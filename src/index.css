@@ -1,0 +1,49 @@
+/* src/index.css */
+
+/* Basic Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    max-width: 1200px; /* Ensures content doesn't stretch too wide on large screens */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* General Styles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin: 0 0 1rem 0; /* Adds margin to paragraphs for spacing */
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+}

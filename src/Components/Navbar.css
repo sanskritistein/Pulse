@@ -1,0 +1,61 @@
+/* src/Components/Navbar.css */
+
+.navbar {
+    background: linear-gradient(90deg, #343a40 0%, #495057 100%); /* Gradient background */
+    padding: 0.75rem 1.5rem; /* Padding adjustments */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    border-bottom: 2px solid #0d6efd; /* Border at the bottom for a clean look */
+}
+
+.navbar-brand {
+    font-size: 1.25rem; /* Font size */
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.navbar-brand:hover {
+    color: #0d6efd;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #e9ecef; /* Lighter color for nav links */
+    padding: 0.5rem 1.25rem; /* Adjusted padding */
+    border-radius: 0.25rem; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(13, 110, 253, 0.1); /* Subtle background change on hover */
+    color: #0d6efd; /* Change color on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #0d6efd;
+    font-weight: bold;
+    background-color: rgba(13, 110, 253, 0.2); /* Highlight active link */
+}
+
+.navbar-toggler {
+    border: 1px solid #fff; /* Border for the toggler button */
+    background-color: transparent; /* Transparent background */
+    border-radius: 0.25rem; /* Rounded corners for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB4PSIxIiB5PSI0IiB3aWR0aD0iMTIiIGhlaWdodD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iUm91bmQiIHN0cm9rZS1vcGFjaXR5PSJhcnJvdyIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0iUm91bmQiLz4KICA8cmVjdCB4PSIxIiB5PSI4IiB3aWR0aD0iMTIiIGhlaWdodD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iUm91bmQiIHN0cm9rZS1vcGFjaXR5PSJhcnJvdyIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0iUm91bmQiLz4KPC9zdmc+Cg==');
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem; /* Reduced padding on smaller screens */
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem; /* Adjusted padding for nav links */
+    }
+}
